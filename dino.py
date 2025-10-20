@@ -29,7 +29,7 @@ class BG:
         screen.blit(self.texture, (self.x,self.y))
 
     def set_texture(self):
-        path = os.path.join("/Users/bernardo/Downloads/Juego/assets/images/bg.png")
+        path = os.path.join(os.path.dirname(__file__), "bg.png")
         self.texture = pygame.image.load(path)
         self.texture = pygame.transform.scale(self.texture, (self.width, self.height))
 
@@ -70,8 +70,8 @@ class Dino:
         screen.blit(self.texture, (self.x,self.y))
 
     
-    def set_texture (self):
-        path = os.path.join(f"/Users/bernardo/Downloads/Juego/assets/images/dino{self.texture_num}.png")
+    def set_texture(self):
+        path = os.path.join(os.path.dirname(__file__), "dino{self.texture_num}.png")
         self.texture = pygame.image.load(path)
         self.texture = pygame.transform.scale(self.texture, (self.width, self.height))
 
@@ -104,7 +104,7 @@ class Cactus:
         screen.blit(self.texture, (self.x,self.y))
 
     def set_texture(self):
-        path = os.path.join("/Users/bernardo/Downloads/Juego/assets/images/cactus.png")
+        path = os.path.join(os.path.dirname(__file__), "cactus.png")
         self.texture = pygame.image.load(path)
         self.texture = pygame.transform.scale(self.texture, (self.width, self.height))
 
