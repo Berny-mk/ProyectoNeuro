@@ -71,7 +71,7 @@ class Dino:
 
     
     def set_texture(self):
-        path = os.path.join(os.path.dirname(__file__), "dino{self.texture_num}.png")
+        path = os.path.join(os.path.dirname(__file__), f"dino{self.texture_num}.png")
         self.texture = pygame.image.load(path)
         self.texture = pygame.transform.scale(self.texture, (self.width, self.height))
 
