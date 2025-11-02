@@ -1,7 +1,7 @@
 import random
 import pygame
 from constants import WIDTH, HEIGHT, screen
-from bg import BG
+from NeuroJump.bg import BG
 from dino import Dino
 from cactus import Cactus
 from collision import Collision
